@@ -1,4 +1,3 @@
-website
-=======
+[zhihaojia.com]
 
-Personal website at zhihaojia.com
+[zhihaojia.com]: http://zhihaojia.com
