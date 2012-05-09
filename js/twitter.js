@@ -4,16 +4,15 @@
 
 $(function() {
     
-   	$.getJSON('https://twitter.com/status/user_timeline/zhihaojia.json?count=32&exclude_replies=true&callback=?', function(data) {
+   	$.getJSON('https://twitter.com/status/user_timeline/zhihaojia.json?count=12&exclude_replies=true&callback=?', function(data) {
         // receives count number of tweets before applying exclude_replies argument
         // want to keep track of real count so we don't display too many
         var indexLimit = 5;
         var html = '';
    	    $.each(data, function(index, item) {
+            if (index > indexLimit) { return; }
             html += '<li>' + item.text.linkify()
             html += ' <span class="faded">(<a href="https://twitter.com/ZhihaoJia/statuses/' + item.id_str  + '" target="_blank">' + relative_time(item.created_at) + ')</a></span></li>';
-
-            if (index >= indexLimit) { return; }
    	    });
 
         // doesn't seem like I can catch error using jQuery and JSONP (JSON works, but isn't cross-site)
