@@ -7,7 +7,7 @@ $(function() {
    	$.getJSON('https://twitter.com/status/user_timeline/zhihaojia.json?count=12&exclude_replies=true&callback=?', function(data) {
         // receives count number of tweets before applying exclude_replies argument
         // want to keep track of real count so we don't display too many
-        var indexLimit = 5;
+        var indexLimit = 7;
         var html = '';
    	    $.each(data, function(index, item) {
             if (index > indexLimit) { return; }

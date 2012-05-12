@@ -4,7 +4,7 @@
 // feeds to add to page
 var pageFeeds = [{type:"blog", containerID:"blogFeed", count: 0,
                  url:"http://news.ycombinator.com/rss"}, // temp feed
-                 {type:"web", containerID:"webFeed", count: 8,
+                 {type:"web", containerID:"webFeed", count: 10,
                  url:"http://www.google.com/reader/public/atom/user%2F09866597367019203653%2Fbundle%2FZhihaoJiaFeed"}]
 var containerQueue = []; // bad style, should fix this
 

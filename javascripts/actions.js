@@ -3,7 +3,7 @@ $(document).ready(function() {
     $('#twitterFeed').show();
     $('#twitterFeedLink').addClass("activeFeedLink");
 
-    $('#feedHeader li').click(function() {
+    $('.feedHeaderLink').click(function() {
         // note that using jQuery hide() and show() will cause
         // the browser to jump to the top of the page, even
         // if there is no animation
