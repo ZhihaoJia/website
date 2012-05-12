@@ -13,6 +13,6 @@ $(document).ready(function() {
         $('#feedHeader .activeFeedLink').removeClass('activeFeedLink');
 
         $('#' + $(this).attr('id')).addClass('activeFeedLink');
-        $('#' + $(this).attr('id').replace('Link', '')).css('display', 'block');
+        $('#' + $(this).attr('id').replace('Link', '')).fadeIn('normal');
     });
 });
