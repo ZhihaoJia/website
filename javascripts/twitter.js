@@ -1,6 +1,5 @@
-// Original code by Chris Coyier
 // Uses Twitter REST API
-// Documentation at https://dev.twitter.com/
+// Documentation at http://dev.twitter.com/
 
 $(function() {
     
@@ -20,10 +19,10 @@ $(function() {
         if (html == '') {
             // twitter uses hourly rate-limiting, which may cause HTTP 400 response codes if limit reached
             // want to check if rate limit is reached
-            // documentation at https://dev.twitter.com/docs/rate-limiting and https://dev.twitter.com/docs/rate-limiting/faq
+            // documentation at http://dev.twitter.com/docs/rate-limiting and http://dev.twitter.com/docs/rate-limiting/faq
             $.getJSON('https://api.twitter.com/account/rate_limit_status.json?callback=?', function(data) {
                 if (data.remaining_hits <= 0) {
-                    $('#twitterFeed').append('<p class="msg">Max number of requests reached.</p>');
+                    $('#twitterFeed').append('<p class="msg">Maximum number of requests reached.</p>');
                 }
                 else {
                     $('#twitterFeed').append('<p class="msg">Unable to display feed.</p>');
@@ -34,7 +33,8 @@ $(function() {
    	        $('#twitterFeed').append('<ul>' + html + '</ul>');
         }
    	});
-
+    
+    // Original code by Chris Coyier
    	function relative_time(time_value) {
         var values = time_value.split(" ");
         time_value = values[1] + " " + values[2] + ", " + values[5] + " " + values[3];
@@ -64,12 +64,13 @@ $(function() {
    	}
    	
    	String.prototype.linkify = function() {
-        // link mentions
-        var linkified = this.replace(/@([A-Za-z0-9_]+)/, '<a href="https://twitter.com/$1" target="_blank">@$1</a>');
+        var linkified = this;
         // links urls
-   	    linkified = linkified.replace(/[A-Za-z]+:\/\/[A-Za-z0-9-_]+\.[A-Za-z0-9-_:%&\?\/.=]+/, function(m) {
-   	        return m.link(m);
-   	    });
+   	    linkified = linkified.replace(/(http[s]?:\/\/[\S]+)/, '<a href="$1" target="_blank">$1</a>');
+        // link mentions
+        linkified = linkified.replace(/@([A-Za-z0-9_]+)/, '<a href="http://twitter.com/$1" target="_blank">@$1</a>');
+        // link hashtags
+        linkified = linkified.replace(/#([A-Za-z0-9_]+)/, '<a href="http://twitter.com/search/#$1" target="_blank">#$1</a>');
         return linkified;
    	};
 
