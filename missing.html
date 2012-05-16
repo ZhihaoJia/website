@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Error 404 (Not Found)</title>
+        
+        <meta name="author" content="Zhihao Jia">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="Personal website of Zhihao Jia.">
+        <meta name="keywords" content="Zhihao, Jia, 404">
+        <meta name="viewport" content="width=600, initial-scale=1">
+        
+        <link rel="icon" type="image/png" href="favicon.png">        
+        <link rel="stylesheet" type="text/css" media="screen, projection" href="stylesheets/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
+		
+		<style type="text/css">
+			#content { text-align: center; }
+			#left, #right {
+                margin: 10px;
+				display: inline-block;
+                vertical-align: top;
+				width: 300px;
+			}
+			.pill {
+				height: 200px;
+				width: 200px;
+				cursor: pointer; cursor: hand;
+			}
+		</style>
+		<script type="text/javascript">
+			/* SPOILER ALERT */
+				function turtle() {
+					window.location.href = 'http://zhihaojia.com';
+				}
+				function panda() {
+					//window.location.href = document.URL;
+					location.reload();
+				}
+			/* SPOILER ALERT */
+		</script>
+    </head>
+
+    <body>
+		
+        <div id="container">
+            <div id="header">
+                <h1>110010100</h1>
+            </div>
+
+            <div id="content">
+                <p>
+					Sorry, your page is in another castle.
+					Or maybe there is no page - the URL is a lie.
+				</p>
+				<div id="left">
+					<img class="pill" src="images/404turtle.png" onclick="turtle();" />
+					<p>
+						You click the turtle - the story ends, you're redirected to some page and believe whatever you want to believe.
+					</p>
+				</div>
+				<div id="right">
+					<img class="pill" src="images/404panda.png" onclick="panda();" />
+					<p>
+						You click the panda - you stay in Errorland and I show you how deep the panda-hole goes.
+					</p>
+				</div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
