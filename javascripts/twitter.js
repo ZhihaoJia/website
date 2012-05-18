@@ -34,6 +34,17 @@ $(function() {
         }
    	});
     
+   	String.prototype.linkify = function() {
+        var linkified = this;
+        // links urls
+   	    linkified = linkified.replace(/(http[s]?:\/\/[\S]+)/, '<a href="$1" target="_blank">$1</a>');
+        // link mentions
+        linkified = linkified.replace(/@([A-Za-z0-9_]+)/, '<a href="http://twitter.com/$1" target="_blank">@$1</a>');
+        // link hashtags
+        linkified = linkified.replace(/#([A-Za-z0-9_]+)/, '<a href="http://twitter.com/search/#$1" target="_blank">#$1</a>');
+        return linkified;
+   	};
+
     // Original code by Chris Coyier
    	function relative_time(time_value) {
         var values = time_value.split(" ");
@@ -63,16 +74,5 @@ $(function() {
    	    return r;
    	}
    	
-   	String.prototype.linkify = function() {
-        var linkified = this;
-        // links urls
-   	    linkified = linkified.replace(/(http[s]?:\/\/[\S]+)/, '<a href="$1" target="_blank">$1</a>');
-        // link mentions
-        linkified = linkified.replace(/@([A-Za-z0-9_]+)/, '<a href="http://twitter.com/$1" target="_blank">@$1</a>');
-        // link hashtags
-        linkified = linkified.replace(/#([A-Za-z0-9_]+)/, '<a href="http://twitter.com/search/#$1" target="_blank">#$1</a>');
-        return linkified;
-   	};
-
 });
 
