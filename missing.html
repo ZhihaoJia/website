@@ -8,10 +8,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="description" content="Personal website of Zhihao Jia.">
         <meta name="keywords" content="Zhihao, Jia, 404">
-        <meta name="viewport" content="width=600, initial-scale=1">
+        <meta name="viewport" content="width=400, initial-scale=1">
         
         <link rel="icon" type="image/png" href="favicon.png">        
-        <link rel="stylesheet" type="text/css" media="screen, projection" href="stylesheets/style.css">
+        <link rel="stylesheet" type="text/css" media="screen, projection" href="stylesheets/screen.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
 		
 		<style type="text/css">
@@ -27,6 +27,12 @@
 				width: 200px;
 				cursor: pointer; cursor: hand;
 			}
+            @media all and (max-device-width: 480px) {
+                #header h1 {
+                    font-size: 3.5em;
+                    letter-spacing: 6px;
+                }
+            }
 		</style>
 		<script type="text/javascript">
 			/* SPOILER ALERT */
@@ -34,8 +40,8 @@
 					window.location.href = 'http://zhihaojia.com';
 				}
 				function panda() {
-					//window.location.href = document.URL;
-					location.reload();
+					window.location.href = 'http://zhihaojia.com/cake';
+					//location.reload();
 				}
 			/* SPOILER ALERT */
 		</script>
