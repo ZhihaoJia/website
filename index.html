@@ -1,84 +1,107 @@
 <!DOCTYPE html>
 <html>
-	
-	<!-- Best viewed under Firefox, Chrome, or Safari -->
-	<!-- IE can suck it -->
-	
     <head>
         <title>Zhihao Jia</title>
         
         <meta name="author" content="Zhihao Jia">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="description" content="Personal website of Zhihao Jia.">
-        <meta name="keywords" content="Zhihao, Jia">
-        <meta name="viewport" content="width=400, initial-scale=1">
+        <meta name="keywords" content="zhihao, jia, website">
+        <!-- <meta name="viewport" content="width=400, initial-scale=1"> -->
         
         <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="stylesheet" type="text/css" media="screen, projection" href="stylesheets/reset.css">
         <link rel="stylesheet" type="text/css" media="screen, projection" href="stylesheets/screen.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
 
         <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-        <script type="text/javascript" src="javascripts/jquery.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
         <script type="text/javascript" src="javascripts/actions.js"></script>
         <script type="text/javascript" src="javascripts/feeds.js"></script>
         <script type="text/javascript" src="javascripts/twitter.js"></script>
     </head>
 
     <body>
-		
         <div id="container">
-            <div id="header">
-                <h1><a href="">Zhihao Jia</a></h1>
+            <header id="header">
+                <h1><a href="http://zhihaojia.com">Zhihao Jia</a></h1>
                 
-                <hr>
-                <div class="menu">
-                    <ul>
-                        <li><a href="http://zhihaojia.com/resume">Resume</a></li>
-                        <li><a href="http://blog.zhihaojia.com">Blog</a></li>
-                        <li><a href="http://zhihaojia.com/sandbox">Sandbox</a></li>
-                    </ul>
+                <div class="divider">
+                    <div class="shadow"></div>
+                    <div class="line"></div>
                 </div>
-                <hr>
-            </div>
 
-            <div id="content">
-                <div id="about">
-					<p>
-                        Hi!
-                    </p>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="http://zhihaojia.com/resume/">Resume</a></li>
+                        <li><a href="http://blog.zhihaojia.com" class="disabled">Blog</a></li>
+                        <li><a href="http://zhihaojia.com/projects/" class="disabled">Projects</a></li>
+                        <li><a href="http://zhihaojia.com/experiments/" class="disabled">Experiments</a></li>
+                    </ul>
+                </nav>
+
+                <div class="divider">
+                    <div class="shadow"></div>
+                    <div class="line"></div>
+                </div>
+
+            </header>
+
+            <section id="content">
+                <section id="about">
                     <p>
                         I'm Zhihao Jia, a third year student in the <a href="http://www.cs.uwaterloo.ca/"><strong>Computer Science</strong></a>
                         (Honours Bioinformatics Option) program at the <a href="http://uwaterloo.ca/"><strong>University of Waterloo</strong></a>.
                     </p>
                     <p>
-                        My interests and hobbies include coding, graphic design, music, books, evolutionary biology, table tennis, go/weiqi/baduk, and Starcraft.
+                        My interests and hobbies include coding, visual arts, music, books, table tennis, go/weiqi/baduk, and Starcraft 2.
                         In the past, I've worked as a technical analyst, quality assurance specialist, and software developer at companies such as
                         <a href="http://www.ramsoft.com/"><strong>Ramsoft</strong></a>, <a href="http://www.ibm.com/ca/en/"><strong>IBM</strong></a>, and
                         <a href="http://www.skywave.com/"><strong>SkyWave Mobile Communications</strong></a>. While working on personal projects and schoolwork,
                         I rely on my handy sidekicks <a href="http://www.vim.org/"><strong>Vim</strong></a>, <a href="http://www.gimp.org/"><strong>GIMP</strong></a>,
                         and <a href="http://git-scm.com/"><strong>Git</strong></a>. I also like turtles and pandas.
                     </p>
-                </div>
-                <div id="social">
+                </section>
+                <section id="social">
                     <p>
                         Want to know more? Check me out at one of the sources below:
                     </p>
-                    <div id="socialMedia">
-                        <a href="http://about.me/zhihaojia" target="_blank" class="mediaButton"><img src='images/aboutme-icon.png'/></a>
-                        <a href="http://vizualize.me/zhihaojia" target="_blank" class="mediaButton"><img src='images/vizualizeme-icon.png'/></a>
-                        <a href="http://www.facebook.com/zhihaojia" target="_blank" class="mediaButton"><img src='images/facebook-icon.png'/></a>
-                        <a href="http://plus.google.com/112270733968308251745/about" target="_blank" class="mediaButton"><img src='images/googleplus-icon.png'/></a>
-                        <a href="http://twitter.com/zhihaojia" target="_blank" class="mediaButton"><img src='images/twitter-icon.png'/></a>
-                        <a href="http://www.linkedin.com/in/zhihaojia" target="_blank" class="mediaButton"><img src='images/linkedin-icon.png'/></a>
-                        <a href="http://github.com/zhihaojia" target="_blank" class="mediaButton"><img src='images/github-icon.png'/></a>
-                        <a href="http://blog.zhihaojia.com/rss" target="_blank" class="mediaButton"><img src='images/rss-icon.png'/></a>
-                    </div>
+                    <section id="social_media">
+                        <a href="http://about.me/zhihaojia" target="_blank" class="mediaButton">
+                            <img src="/images/aboutme-icon.png" alt="About.Me"/>
+                        </a>
+                        <a href="http://vizualize.me/zhihaojia" target="_blank" class="mediaButton disabled">
+                            <img src="/images/vizualizeme-icon.png" alt="Vizualize.Me"/>
+                        </a>
+                        <a href="http://www.facebook.com/zhihaojia" target="_blank" class="mediaButton">
+                            <img src="/images/facebook-icon.png" alt="Facebook"/>
+                        </a>
+                        <a href="http://plus.google.com/112270733968308251745/about" target="_blank" class="mediaButton">
+                            <img src="/images/googleplus-icon.png" alt="Google+"/>
+                        </a>
+                        <a href="http://twitter.com/zhihaojia" target="_blank" class="mediaButton">
+                            <img src="/images/twitter-icon.png" alt="Twitter"/>
+                        </a>
+                        <a href="http://www.linkedin.com/in/zhihaojia" target="_blank" class="mediaButton">
+                            <img src="/images/linkedin-icon.png" alt="LinkedIn"/>
+                        </a>
+                        <a href="http://stackoverflow.com/users/1405830/" target="_blank" class="mediaButton">
+                            <img src="/images/stackoverflow-icon.png" alt="StackOverflow"/>
+                        </a>
+                        <a href="http://github.com/zhihaojia" target="_blank" class="mediaButton">
+                            <img src="/images/github-icon.png" alt="GitHub"/>
+                        </a>
+                        <a href="http://blog.zhihaojia.com/rss" target="_blank" class="mediaButton disabled">
+                            <img src="/images/rss-icon.png" alt="RSS"/>
+                        </a>
+                    </section>
                     <p id="contact">
-                        If you would like to contact me, or if you're just bored, feel free to drop me a line at <a href="mailto:contact@zhihaojia.com">contact@zhihaojia.com</a>.
+                        If you would like to contact me, or if you're just bored, feel free to drop me a line at
+                        <a href="mailto:contact@zhihaojia.com"><strong>contact@zhihaojia.com</strong></a>.
                     </p>
-                </div>
+                </section>
                 
-                <div id="feeds">
+                <section id="feeds">
                     <div id="feedHeader">
                         <p>What I am...</p>
                         <ul>
@@ -88,15 +111,13 @@
                         </ul>
                     </div>
                     <div id="feedContent">
-                        <div id="twitterFeed"></div>
-                        <div id="blogFeed"></div>
-                        <div id="webFeed"></div>
+                        <div id="twitterFeed" class="feed"></div>
+                        <div id="blogFeed" class="feed"></div>
+                        <div id="webFeed" class="feed"></div>
                     </div>
-                </div>
+                </section>
 
-            </div>
+            </section>
         </div>
-
     </body>
-
 </html>

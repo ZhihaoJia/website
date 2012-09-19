@@ -36,29 +36,35 @@ function feedLoaded(result) {
 
     if (!result.error) {
         // do I really need this part?
-		if (result.feed.entries.length == 0) {
-		    container.innerHTML = '<p class="msg">Unable to display feed.</p>'
+		if (result.feed.entries.length === 0) {
+            $('<p/>', {
+                'class': 'msg',
+                html: 'Unable to display feed.'
+            }).appendTo(container);
 			return;
         }
 
         container.innerHTML = '';
-        var html = '';
+        var items = [];
 
         // loop through feeds, extract and format desired info, put on page
         for (var i = 0; i < result.feed.entries.length; i++) {
             var entry = result.feed.entries[i];
-            html += '<div class="feed"><dt>' + entry.title + '</dt>';
-            html += '<dd><em>' + entry.contentSnippet + '</em> <span class="faded">(<a href="' + entry.link + '" target="_blank">read more</a>)</span></dd></div>';
+            items.push('<div class="feed_item"><dt>' + entry.title + '</dt>' + '<dd><em>' + entry.contentSnippet + '</em> <span class="faded">(<a href="' + entry.link + '" target="_blank">read more</a>)</span></dd></div>');
         }
-        container.innerHTML = '<dl>' + html + '</dl>';
+        $('<dl/>', {
+            html: items.join('')
+        }).appendTo(container);
         
-        // toggle feed snippet visibility on title click
-        $('#' + containerID + ' dt').click(function() {
-            $(this).next('dd').slideToggle('normal');
+        // toggle feed snippet visibility on feed item click
+        $('#' + containerID + ' .feed_item').click(function() {
+            $(this).find('dd').slideToggle('normal');
         });
     }
     else {
-        var feedErrorMessage = '<p class="msg">Unable to display feed.</p>'
-        container.innerHTML = feedErrorMessage;
+        $('<p/>', {
+            'class': 'msg',
+            html: 'Unable to display feed.'
+        }).appendTo(container);
     }
 }
