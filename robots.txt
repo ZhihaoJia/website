@@ -4,3 +4,4 @@
 User-agent: *
 Disallow: /resume/
 Disallow: /resume.html
+Disallow: /downloads/
