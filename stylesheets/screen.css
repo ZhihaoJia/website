@@ -46,6 +46,9 @@ h3 {
 p {
     margin:                 1em 0;
 }
+ol {
+    list-style-type:        decimal;
+}
 
 .disabled, .disabled * {
     opacity:                0.5;
@@ -293,6 +296,9 @@ p {
 
 #articles article {
     margin:                 24px 0;
+}
+#articles ol {
+    margin:            0 48px;
 }
 #articles article .details {
     margin:                 12px 0;
