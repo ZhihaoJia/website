@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zhihao Jia - Experiments</title>
+        
+        <meta name="author" content="Zhihao Jia">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="Zhihao Jia's experiments.">
+        <meta name="keywords" content="zhihao, jia, website, experiments">
+        
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="stylesheet" type="text/css" media="screen, projection" href="/stylesheets/reset.css">
+        <link rel="stylesheet" type="text/css" media="screen, projection" href="/stylesheets/screen.css">
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/javascripts/actions.js"></script>
+
+        <!--[if lt IE 9]>
+        <script type="text/javascript">
+            document.createElement('nav');
+            document.createElement('section');
+            document.createElement('article');
+            document.createElement('aside');
+            document.createElement('header');
+            document.createElement('footer');
+            document.createElement('hgroup');
+        </script>
+
+        <style type="text/css">
+            header
+            ,nav
+            ,section
+            ,article
+            ,aside
+            ,footer
+            ,hgroup {
+                display: block;
+            }
+        </style>
+        <![endif]-->        
+    </head>
+
+    <body>
+        <div id="container">
+            <header id="header">
+                <h1><a href="http://zhihaojia.com">Zhihao Jia</a></h1>
+                
+                <div class="divider">
+                    <div class="shadow"></div>
+                    <div class="light_line"></div>
+                </div>
+
+                <nav id="menu">
+                    <ul>
+                        <li><a href="http://blog.zhihaojia.com" class="disabled">Blog</a></li>
+                        <li><a href="http://zhihaojia.com/projects/">Projects</a></li>
+                        <li><a href="http://zhihaojia.com/experiments/" class="disabled">Experiments</a></li>
+                        <li><a href="http://zhihaojia.com/resume/">Resume</a></li>
+                    </ul>
+                </nav>
+
+                <div class="divider">
+                    <div class="shadow"></div>
+                    <div class="light_line"></div>
+                </div>
+
+            </header>
+
+            <section id="content">
+                <section id="description">
+                    <h2>Experiments</h2>
+                    <p>
+                        This page is used to keep track of experiments, proof-of-concepts, and quick mini-projects that I'm working on.
+                        Basically, anything that I might do or create out of curiosity, interest, or need that would not count as a "project".
+                    </p>
+                </section>
+
+                <div class="divider">
+                    <div class="dark_line"></div>
+                    <div class="highlight"></div>
+                </div>
+
+                <section id="articles">
+                    <article class="project">
+                        <h3>SimpleCanvas <span class="faded small">(scrapped?)</span></h3>
+                        <ul class="details">
+                            <p>
+                                A simple web painting application that uses the HTML5 canvas element.
+                                A lot of these types of apps currently exist around the internet.
+                                I mostly started this experiment to learn how to use the HTML5 canvas, although with some additional challenges:
+                            </p>
+                            <ol>
+                                <li>Add undo/redo functionality. At the time I started this, there did not seem to be any easily-findable painting apps that had this.</li>
+                                <li>Use only one canvas element for the painting/image surface (allowed to use additional canvas elements for other comonents, like the color-picker).
+                                    Most canvas painting apps I found at the time I started used multiple canvas elements for the main painting component.
+                                </li>
+                            </ol>
+                            <p>
+                                I'm currently not working on this due to lack of time. Unfortunately, I don't have a working version at the moment either,
+                                as it is now broken and I had not bothered to version-control it at the time (sort of regret that now).
+                                Maybe I'll pick it up again in the future...
+                            </p>
+                        </ul>
+                    </article>
+                </section>
+            </section>
+        </div>
+    </body>
+</html>

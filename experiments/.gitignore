@@ -1,0 +1,4 @@
+*.swp
+.htaccess
+*-min.js
+sample_*
