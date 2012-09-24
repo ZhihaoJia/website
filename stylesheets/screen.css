@@ -140,7 +140,7 @@ ol {
 #menu a:hover {
 	background:             rgb(120,120,120);
 }
-#menu a.disabled:hover {
+#menu a.inactive:hover {
     background:             inherit;
 }
 
