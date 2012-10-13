@@ -51,7 +51,7 @@ $(function() {
         return linkified;
    	};
 
-    // Original code by Chris Coyier
+    // Based off of code by Chris Coyier
    	function relative_time(time_value) {
         var values = time_value.split(" ");
         time_value = values[1] + " " + values[2] + ", " + values[5] + " " + values[3];
@@ -73,8 +73,20 @@ $(function() {
    	        r = '' + (parseInt(delta / 3600)).toString() + ' hours ago';
    	    } else if(delta < (48*60*60)) {
    	        r = '1 day ago';
-   	    } else {
+        } else if(delta < (7*24*60*60)) {
    	        r = (parseInt(delta / 86400)).toString() + ' days ago';
+        } else if(delta < (2*7*24*60*60)) {
+            r = '1 week ago';
+        } else if(delta < (5*7*24*60*60)) {
+            r = (parseInt(delta / (60*60*24*7))).toString() + ' weeks ago';
+        } else if(delta < (31*24*60*60)) {
+            r = '1 month ago';
+        } else if(delta < (12*30*24*60*60)) {
+            r = (parseInt(delta / (60*60*24*30))).toString() + ' months ago';
+        } else if(delta < (730*24*60*60)) {
+            r = '1 year ago';
+        } else {
+            r = (parseInt(delta / (60*60*24*365))).toString() + ' years ago';
    	    }
    	  
    	    return r;
