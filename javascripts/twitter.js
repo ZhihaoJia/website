@@ -3,7 +3,7 @@
 
 $(function() {
     
-   	$.getJSON('https://twitter.com/status/user_timeline/zhihaojia.json?count=12&exclude_replies=true&callback=?', function(data) {
+    $.getJSON('https://api.twitter.com/1/statuses/user_timeline.json?screen_name=zhihaojia&count=12&exclude_replies=true&callback=?', function(data) {
         // receives count number of tweets before applying exclude_replies argument
         // want to keep track of real count so we don't display too many
         var indexLimit = 7;
@@ -43,11 +43,11 @@ $(function() {
    	String.prototype.linkify = function() {
         var linkified = this;
         // links urls
-   	    linkified = linkified.replace(/(http[s]?:\/\/[\S]+)/, '<a href="$1" target="_blank">$1</a>');
+        linkified = linkified.replace(/(http[s]?:\/\/[\S]+)/g, '<a href="$1" target="_blank">$1</a>');
         // link mentions
-        linkified = linkified.replace(/@([A-Za-z0-9_]+)/, '<a href="http://twitter.com/$1" target="_blank">@$1</a>');
+        linkified = linkified.replace(/@([A-Za-z0-9_]+)/g, '<a href="http://twitter.com/$1" target="_blank">@$1</a>');
         // link hashtags
-        linkified = linkified.replace(/#([A-Za-z0-9_]+)/, '<a href="http://twitter.com/search/#$1" target="_blank">#$1</a>');
+        linkified = linkified.replace(/#([A-Za-z0-9_]+)/g, '<a href="http://twitter.com/search?q=%23$1" target="_blank">#$1</a>');
         return linkified;
    	};
 
