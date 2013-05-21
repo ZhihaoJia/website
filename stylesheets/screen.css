@@ -309,6 +309,9 @@ ol {
 #articles article .details {
     margin:                 12px 0;
 }
+#articles .project .details li {
+  margin: 6px 0;
+}
 
 
 @media all and (max-device-width: 480px) {
