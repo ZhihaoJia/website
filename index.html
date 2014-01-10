@@ -7,17 +7,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="description" content="Personal website of Zhihao Jia.">
         <meta name="keywords" content="zhihao, jia, website">
-        <!-- <meta name="viewport" content="width=400, initial-scale=1"> -->
         
-        <link rel="icon" type="image/png" href="favicon.png">
-        <link rel="stylesheet" type="text/css" media="screen, projection" href="/stylesheets/reset.css">
-        <link rel="stylesheet" type="text/css" media="screen, projection" href="/stylesheets/screen.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/reset.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/styles.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
 
-        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-        <script type="text/javascript" src="/javascripts/actions.js"></script>
-        <script type="text/javascript" src="/javascripts/feeds.js"></script>
-        <script type="text/javascript" src="/javascripts/twitter.js"></script>
 
         <!--[if lt IE 9]>
         <script type="text/javascript">
@@ -62,104 +57,6 @@
 
     <body>
         <div id="container">
-            <header id="header">
-                <h1><a href="http://zhihaojia.com">Zhihao Jia</a></h1>
-                
-                <div class="divider">
-                    <div class="shadow"></div>
-                    <div class="light_line"></div>
-                </div>
-
-                <nav id="menu">
-                    <ul>
-                        <li><a href="http://blog.zhihaojia.com" class="disabled inactive">Blog</a></li>
-                        <li><a href="http://zhihaojia.com/projects/">Projects</a></li>
-                        <li><a href="http://zhihaojia.com/resume">Resume</a></li>
-                    </ul>
-                </nav>
-
-                <div class="divider">
-                    <div class="shadow"></div>
-                    <div class="light_line"></div>
-                </div>
-
-            </header>
-
-            <section id="content">
-                <section id="description">
-                    <p>
-                        I'm Zhihao Jia, a fourth year <a href="http://watiam.uwaterloo.ca/search/results.jsp?submit=&uid=z3jia"><strong>student</strong></a>
-                        in the <a href="http://www.cs.uwaterloo.ca/"><strong>Computer Science</strong></a> (Honours Bioinformatics Option) program at the
-                        <a href="http://uwaterloo.ca/"><strong>University of Waterloo</strong></a>.
-                    </p>
-                    <p>
-                        My interests and hobbies include coding, music, books, table tennis, go/weiqi/baduk, user interface design and optimization,
-                        and Starcraft 2. In the past, I've worked as a software developer, quality assurance specialist, and technical analyst at companies such as
-                        <a href="http://www.ramsoft.com/"><strong>Ramsoft</strong></a>, <a href="http://www.ibm.com/ca/en/"><strong>IBM Canada</strong></a>,
-                        <a href="http://www.skywave.com/"><strong>SkyWave Mobile Communications</strong></a>, and <a href="http://copious.com/"><strong>Copious</strong></a>.
-                        While working on personal projects and schoolwork, I rely on my handy sidekicks <a href="http://www.vim.org/"><strong>Vim</strong></a>,
-                        <a href="http://www.gimp.org/"><strong>GIMP</strong></a>, and <a href="http://git-scm.com/"><strong>Git</strong></a>. I also like turtles and pandas.
-                    </p>
-                </section>
-                <section id="social">
-                    <p>
-                        Want to know more? Check me out at one of the sources below:
-                    </p>
-                    <section id="social_media">
-                        <a href="http://about.me/zhihaojia" target="_blank" class="mediaButton">
-                            <img src="/images/aboutme-icon.png" alt="About.Me"/>
-                        </a>
-                        <a href="http://vizualize.me/zhihaojia" target="_blank" class="mediaButton">
-                            <img src="/images/vizualizeme-icon.png" alt="Vizualize.Me"/>
-                        </a>
-                        <a href="http://www.facebook.com/zhihaojia" target="_blank" class="mediaButton">
-                            <img src="/images/facebook-icon.png" alt="Facebook"/>
-                        </a>
-                        <a href="http://plus.google.com/112270733968308251745/about" target="_blank" class="mediaButton">
-                            <img src="/images/googleplus-icon.png" alt="Google+"/>
-                        </a>
-                        <a href="http://twitter.com/zhihaojia" target="_blank" class="mediaButton">
-                            <img src="/images/twitter-icon.png" alt="Twitter"/>
-                        </a>
-                        <a href="http://www.linkedin.com/in/zhihaojia" target="_blank" class="mediaButton">
-                            <img src="/images/linkedin-icon.png" alt="LinkedIn"/>
-                        </a>
-                        <a href="http://stackoverflow.com/users/1405830/" target="_blank" class="mediaButton">
-                            <img src="/images/stackoverflow-icon.png" alt="StackOverflow"/>
-                        </a>
-                        <a href="http://github.com/zhihaojia" target="_blank" class="mediaButton">
-                            <img src="/images/github-icon.png" alt="GitHub"/>
-                        </a>
-                    </section>
-                    <p id="contact">
-                        If you would like to contact me, or if you're just bored, feel free to drop me a line at
-                        <script type="text/javascript">
-                            var user = 'contact';
-                            var domain = 'zhihaojia';
-                            var tld = 'com';
-                            document.write('<a hr' + 'ef="m' + 'ailt' + 'o:' + user + '@' + domain + '.' + tld + '">');
-                        </script>
-                        <strong>&#099;&#x6F;&#110;&#x74;&#097;&#x63;&#116;&#x40;<span class="remove">REMOVE</span>&#122;&#x68;&#105;&#x68;&#097;&#x6F;&#106;&#x69;&#097;&#x2E;&#099;&#x6F;&#109;</strong><script type="text/javascript">document.write('</a>');</script>.
-                    </p>
-                </section>
-                
-                <section id="feeds">
-                    <div id="feedHeader">
-                        <p>What I am...</p>
-                        <ul>
-                            <li id="twitterFeedLink" class="feedHeaderLink">...Saying</li>
-                            <li id="blogFeedLink" class="feedHeaderLink">...Writing</li>
-                            <li id="webFeedLink" class="feedHeaderLink">...Reading</li>
-                        </ul>
-                    </div>
-                    <div id="feedContent">
-                        <div id="twitterFeed" class="feed"></div>
-                        <div id="blogFeed" class="feed"></div>
-                        <div id="webFeed" class="feed"></div>
-                    </div>
-                </section>
-
-            </section>
         </div>
     </body>
 </html>
