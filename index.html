@@ -7,12 +7,13 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="description" content="Personal website of Zhihao Jia.">
         <meta name="keywords" content="zhihao, jia, website">
-        
-        <link rel="stylesheet" type="text/css" href="/stylesheets/reset.css">
-        <link rel="stylesheet" type="text/css" href="/stylesheets/styles.css">
-        <link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
 
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+        <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
 
         <!--[if lt IE 9]>
         <script type="text/javascript">
@@ -57,6 +58,58 @@
 
     <body>
         <div id="container">
+          <div class="primary-col">
+            <section id="content">
+              <img src="images/profile.png" alt="Profile picture">
+              <section id="introduction">
+                <p>
+                  Hi there, I'm Zhihao Jia, a fourth year <a href="http://watiam.uwaterloo.ca/search/results.jsp?submit=&uid=z3jia">student</a>
+                  in the <a href="http://www.cs.uwaterloo.ca/">Computer Science</a> (Honours Bioinformatics Option) program at the <a href="http://uwaterloo.ca/">University of Waterloo</a>.
+                </p>
+                <p>
+                  My interests lie primarily in the areas of UI, UX, and front-end web development.
+                  In the past, I have worked as a software engineer at companies such as <a href="http://www.skywave.com/">SkyWave Mobile Communications</a>,
+                  <a href="http://copious.com/">Copious</a>, and <a href="https://twitter.com/">Twitter</a>.
+                  My favorite text editor is <a href="http://www.vim.org/">Vim</a>, and I like pandas.
+                </p>
+              </section>
+            </section>
+          </div>
+
+          <div class="secondary-col">
+            <section id="connect">
+              <ul>
+                <li>
+                  <!-- Hide email from web crawlers using JS, alternating character-encoding, and extraneous markup. -->
+                  <i class="fa fa-envelope fa-lg"></i><script type="text/javascript">
+                    var user = 'contact';
+                    var domain = 'zhihaojia';
+                    var tld = 'com';
+                    document.write('<a id="contact-email" hr' + 'ef="m' + 'ailt' + 'o:' + user + '@' + domain + '.' + tld + '">');
+                  </script>&#099;&#x6F;&#110;&#x74;&#097;&#x63;&#116;&#x40;<span class="hidden">HIDDEN</span>&#122;&#x68;&#105;&#x68;&#097;&#x6F;&#106;&#x69;&#097;&#x2E;&#099;&#x6F;&#109;
+                  <script type="text/javascript">
+                    document.write('</a>');
+                  </script>
+                </li>
+                <li>
+                  <i class="fa fa-twitter fa-lg"></i>
+                  <a href="https://twitter.com/zhihaojia" target="_blank">Twitter</a>
+                </li>
+                <li>
+                  <i class="fa fa-linkedin fa-lg"></i>
+                  <a href="http://www.linkedin.com/in/zhihaojia" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                  <i class="fa fa-github fa-lg"></i>
+                  <a href="https://github.com/zhihaojia" target="_blank">GitHub</a>
+                </li>
+                <li>
+                  <i class="fa fa-stack-overflow fa-lg"></i>
+                  <a href="http://stackoverflow.com/users/1405830" target="_blank">Stack Overflow</a>
+                </li>
+              </ul>
+            </section>
+          </div>
         </div>
     </body>
 </html>
