@@ -1,0 +1,59 @@
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  color: rgb(68, 68, 68);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  line-height: 1.2em;
+  color: rgb(34, 34, 34);
+}
+
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+
+a {
+  color: rgb(68, 68, 68);
+}
+a:hover {
+  text-decoration: underline;
+}
+
+p + p {
+  margin-top: 1em;
+}
+
+.hidden {
+  display: none;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.acronym {
+  font-variant: small-caps;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.fa.fa-lg {
+  width: 30px;
+  text-align: center;
+  margin-right: 6px;
+}
+sup .fa.fa-external-link {
+  font-size: 0.5em;
+  position: relative;
+  top: -0.8em;
+  left: 0.3em;
+}
