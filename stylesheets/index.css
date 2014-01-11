@@ -1,0 +1,81 @@
+#container {
+  background: rgb(230, 230, 230);
+  font-size: 18px;
+}
+#container a:hover {
+  text-decoration: none;
+}
+#container p,
+#container li {
+  line-height: 1.5em;
+}
+#container p,
+#container a {
+  color: rgb(0, 128, 128);
+}
+#container a:hover {
+  color: rgb(28, 156, 156);
+}
+
+.primary-col,
+.secondary-col {
+  position: fixed;
+  display: table;
+}
+.primary-col {
+  left: 0;
+  height: 100%;
+  width: 60%;
+  padding-left: 10%;
+}
+.secondary-col {
+  right: 0;
+  height: 100%;
+  width: 20%;
+  padding-right: 10%;
+  background: rgb(0, 128, 128);
+}
+
+.avatar {
+  height: 160px;
+  width: 160px;
+  border-radius: 80px;
+}
+
+#content,
+#connect {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#content {
+  position: relative;
+  min-height: 160px;
+}
+#content .avatar {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -80px;
+}
+#content .avatar + #intro {
+  margin-left: 180px;
+  margin-right: 15px;
+}
+
+#connect {
+  padding-left: 15px;
+}
+#connect ul + ul {
+  margin-top: 1em;
+}
+#connect li {
+}
+#connect,
+#connect a {
+  color: rgb(230, 230, 230);
+}
+#connect li:hover,
+#connect li:hover a {
+  color: rgb(250, 250, 250);
+}
