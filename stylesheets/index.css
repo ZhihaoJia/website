@@ -153,10 +153,15 @@ body {
   #connect ul {
     text-align: left;
   }
+  #connect ul + ul {
+    margin-top: 2em;
+  }
   #connect li {
     display: block;
   }
+  /* Seems like mobile browsers round down values, so must use whole numbers */
   #connect li + li {
+    margin-top: 1em;
     margin-left: 0;
   }
 }
