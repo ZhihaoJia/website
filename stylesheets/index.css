@@ -54,7 +54,8 @@
 }
 #content .avatar {
   position: absolute;
-  left: 0;
+  /* For some reason left is not relative to #content in Firefox */
+  /* left: 0; */
   top: 50%;
   margin-top: -80px;
 }
