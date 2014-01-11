@@ -61,16 +61,16 @@
           <div class="primary-col">
             <section id="content">
               <img src="images/profile.png" alt="Profile picture" class="avatar">
-              <section id="introduction">
+              <section id="intro">
                 <p>
-                  Hi there, I'm Zhihao Jia, a fourth year <a href="http://watiam.uwaterloo.ca/search/results.jsp?submit=&uid=z3jia">student</a>
-                  in the <a href="http://www.cs.uwaterloo.ca/">Computer Science</a> (Honours Bioinformatics Option) program at the <a href="http://uwaterloo.ca/">University of Waterloo</a>.
+                  Hi there, I'm <strong>Zhihao Jia</strong>, a fourth year student in the <a href="http://www.cs.uwaterloo.ca/"><strong>Computer Science</strong></a>
+                  (Honours Bioinformatics Option) program at the <a href="http://uwaterloo.ca/"><strong>University of Waterloo</strong></a>.
                 </p>
                 <p>
                   My interests lie primarily in the areas of UI, UX, and front-end web development.
-                  In the past, I have worked as a software engineer at companies such as <a href="http://www.skywave.com/">SkyWave Mobile Communications</a>,
-                  <a href="http://copious.com/">Copious</a>, and <a href="https://twitter.com/">Twitter</a>.
-                  My favorite text editor is <a href="http://www.vim.org/">Vim</a>, and I like pandas.
+                  In the past, I have worked as a software engineer at companies such as <a href="http://www.skywave.com/"><strong>SkyWave</strong></a>,
+                  <a href="http://copious.com/"><strong>Copious</strong></a>, and <a href="https://twitter.com/"><strong>Twitter</strong></a>.
+                  My favorite text editor is <a href="http://www.vim.org/"><strong>Vim</strong></a>, and I like pandas.
                 </p>
               </section>
             </section>
@@ -78,25 +78,28 @@
 
           <div class="secondary-col">
             <section id="connect">
-              <ul>
-                <li id="resume-link">
+              <ul id="resumes">
+                <li>
                   <i class="fa fa-globe fa-lg"></i><a href="resume">Resume (HTML)</a>
                 </li>
-                <li id="resume-link">
+                <li>
                   <i class="fa fa-file-text fa-lg"></i><a href="resume.pdf">Resume (PDF)</a>
                 </li>
+              </ul>
+              <ul id="contact">
                 <li>
-                  <!-- Hide email from web crawlers using JS, alternating character-encoding, and extraneous markup. -->
+                  <!-- Hide email from web crawlers using JS. -->
                   <i class="fa fa-envelope fa-lg"></i><script type="text/javascript">
                     var user = 'contact';
                     var domain = 'zhihaojia';
                     var tld = 'com';
                     document.write('<a id="contact-email" hr' + 'ef="m' + 'ailt' + 'o:' + user + '@' + domain + '.' + tld + '">');
-                  </script>&#099;&#x6F;&#110;&#x74;&#097;&#x63;&#116;&#x40;<span class="hidden">HIDDEN</span>&#122;&#x68;&#105;&#x68;&#097;&#x6F;&#106;&#x69;&#097;&#x2E;&#099;&#x6F;&#109;
-                  <script type="text/javascript">
+                  </script>Email<script type="text/javascript">
                     document.write('</a>');
                   </script>
                 </li>
+              </ul>
+              <ul id="external-sources">
                 <li>
                   <i class="fa fa-twitter fa-lg"></i><a href="https://twitter.com/zhihaojia" target="_blank">Twitter</a>
                 </li>
