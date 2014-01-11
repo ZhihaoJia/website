@@ -1,5 +1,4 @@
 #container {
-  background: rgb(230, 230, 230);
   font-size: 18px;
 }
 #container a:hover {
@@ -17,18 +16,18 @@
   color: rgb(28, 156, 156);
 }
 
-.primary-col,
-.secondary-col {
+.primary-block,
+.secondary-block {
   position: fixed;
   display: table;
 }
-.primary-col {
+.primary-block {
   left: 0;
   height: 100%;
   width: 60%;
   padding-left: 10%;
 }
-.secondary-col {
+.secondary-block {
   right: 0;
   height: 100%;
   width: 20%;
@@ -80,4 +79,73 @@
 #connect li:hover,
 #connect li:hover a {
   color: rgb(250, 250, 250);
+}
+
+/* Width based on the min width before links in secondary-block (sidebar) begin to wrap */
+@media all and (max-width: 880px) {
+  div.primary-block,
+  div.secondary-block {
+    position: static;
+    display: block;
+
+    padding: 2em;
+  }
+  .primary-block {
+    height: auto;
+    width: auto;
+    padding: 0;
+  }
+  .secondary-block {
+    height: auto;
+    width: auto;
+    padding: 0;
+  }
+
+  #content,
+  #connect {
+    display: block;
+  }
+
+  #content .avatar {
+    position: static;
+
+    display: block;
+    margin: 0 auto 1.5em auto;
+  }
+  #content .avatar + #intro {
+    margin: 0;
+  }
+
+  #connect {
+    padding: 0;
+  }
+  #connect ul {
+    text-align: center;
+  }
+  #connect li {
+    display: inline-block;
+  }
+  #connect li + li {
+    margin-left: 1em;
+  }
+}
+
+/* Width based on the min width before links in secondary-block (footer) begins to wrap */
+@media all and (max-width: 630px) {
+  .secondary-block {
+    text-align: center;
+  }
+
+  #connect {
+    display: inline-block;
+  }
+  #connect ul {
+    text-align: left;
+  }
+  #connect li {
+    display: block;
+  }
+  #connect li + li {
+    margin-left: 0;
+  }
 }
